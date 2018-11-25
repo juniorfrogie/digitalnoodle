@@ -1,0 +1,85 @@
+// Bootstrap overrides for this template
+.bg-primary {
+  background: $theme-primary;
+  background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
+  background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+}
+
+.text-primary {
+  color: $theme-primary !important;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-primary {
+  color: white;
+  border: 1px solid;
+  background-color: $theme-primary;
+  border-color: transparent;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    border-color: transparent;
+    background-color: $theme-primary-focus;
+  }
+}
+.btn-outline {
+  color: $theme-primary;
+  border: 1px solid;
+  border-color: $theme-primary;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    border-color: $theme-primary;
+    background-color: $theme-primary;
+  }
+}
+.btn-outline-white {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    border-color: $theme-primary;
+    background-color: $theme-primary;
+  }
+}
+
+.btn-outline-secondary{
+  color: $gray-darker;
+  border: 1px solid;
+  border-color: $gray-darker;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    border-color: $theme-primary;
+    background-color: $theme-primary;
+  }
+}
+
+.btn {
+  border-radius: 3px;
+  @include alt-font;  
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 30px;
+}
+.navbar {
+  padding: 1.5rem 1rem;
+}

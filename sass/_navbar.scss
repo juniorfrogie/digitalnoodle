@@ -1,0 +1,107 @@
+#mainNav {
+  border-color: fade-out($gray-darker, .95);
+  @include transition-all;
+  @include alt-font;
+  .navbar-brand {
+    color: $theme-primary;
+    &:hover,
+    &:focus {
+      color: darken($theme-primary, 10%);
+    }
+  }
+  .navbar-toggler {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 10px;
+    color: $gray-darker;
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        &.active {
+          color: $theme-primary !important;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      > a,
+      > a:focus {
+        color: $gray-darker;
+        &:hover {
+          color: $theme-primary;
+        }
+      }
+    }
+  }
+  .btn-contact{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: 992px) {
+    border-color: transparent;
+    background-color: transparent;
+    .navbar-brand {
+      color: fade($gray-darker, 70%);
+      &:hover,
+      &:focus {
+        color: $gray-darker;
+      }
+
+      img {
+        height: 100px;
+        transition: all .3s;
+      }
+    }
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+      color: white;
+      &:hover {
+        color: darken(white, 30%);
+      }
+    }
+    &.navbar-shrink {
+      border-color: fade-out($gray-darker, .9);
+      box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
+      background-color: white;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
+      padding: .5rem 1rem;
+      .navbar-brand {
+        color: $gray-darker;
+        &:hover,
+        &:focus {
+          color: $theme-primary;
+        }
+
+        img {
+          height: 36px;
+          transition: all .3s;
+        }
+      }
+      .navbar-nav > li > a,
+      .navbar-nav > li > a:focus {
+        color: $gray-darker;
+        &:hover {
+          color: $theme-primary;
+        }
+      }
+      .btn-contact,
+      .btn-contact:focus {
+        color: $gray-darker;
+        border-color: $gray-darker;
+        &:hover {
+          color: $gray-darker;
+          border-color: $theme-primary;
+        }
+      }
+    }
+  }
+
+}

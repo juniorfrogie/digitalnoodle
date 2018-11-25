@@ -1,0 +1,215 @@
+section:nth-of-type(2n+1) {
+  // background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+}
+
+.line-subtext {
+  border-top: 1px solid #eee;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 15px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before {
+    background: #e3451e none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 50px;
+  }
+}
+
+p.title{
+  display: block;
+  font-size: 1.375rem;
+  line-height: 1;
+  margin: 0 0 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Rubik",sans-serif;
+}
+
+p.content {
+  color: $gray-light;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+.section-title {
+  padding-bottom: 8px;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    height: 2px;
+    width: 100px;
+    content: '';
+    background: $theme-primary;
+  }
+}
+.sub-title-section {
+  font-size: 16px;
+  color: #B5B5B5;
+}
+.team {
+  /*-----------------------------TEAM SECTION-----------------------------------*/
+  .box-subtext {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+    color: #8d8d8d;
+    line-height: 2.2;
+  }
+  .box-subtitle {
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 25px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .content-box {
+    /* padding-right: 50px; */
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+
+  .box-icon {
+    background: #dedede  none repeat scroll 0 0;
+    border-radius: 100px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    top: 50%;
+    width: 30px;
+  }
+  .img-team {position:relative;}
+  .team-sicon {
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    opacity:0;
+    width: 100%;
+    transition:0.3s;
+  }
+  .img-team:hover .team-sicon {
+    opacity:1;
+    top:50%;
+  }
+  .img-team:hover {
+    background: #333;
+  }
+  .img-team img{
+    transition:0.2s;
+  }
+  .img-team:hover img {
+    opacity: 0.5;
+    position: relative;
+    z-index: 0;
+  }
+  .team-sicon > li {
+    display: inline-block;
+  }
+  .team-sicon a {
+    background: #e3451e none repeat scroll 0 0;
+    border-radius: 100px;
+    border:2px solid #e3451e;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height:26px;
+  }
+  .team-sicon a:hover{
+    border-color:#e3451e;
+    color:#e3451e;
+    background:transparent;
+  }
+}
+.section-contactus{
+  margin-bottom: 0;
+  background-color: #F8F8F8;
+  border-top: 1px solid #ebebeb;
+  ul {
+    padding-inline-start: 0px;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .contact-info, .social-links {
+    color: $gray-light;
+  }
+  .social-links a {
+    background: $gray-lighter none repeat scroll 0 0;
+    color: $gray-light;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    border-radius: 100px;
+  }
+}
+.section-gallery{
+  margin-bottom: 0;
+  background-color: #000;
+  border-top: 1px solid #ebebeb;
+  color: #fff;
+
+  @media (min-width: 992px) {
+    .photograph {
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+.section-trailers {
+  .port-cat {
+    color: #8d8d8d;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+  }
+  .port-content h3 {
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 25px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Rubik",sans-serif;
+  }
+}
