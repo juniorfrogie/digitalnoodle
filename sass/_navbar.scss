@@ -66,41 +66,41 @@
         color: darken(white, 30%);
       }
     }
-    }
-    &.navbar-shrink {
-      border-color: fade-out($gray-darker, .9);
-      box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
-      background-color: white;
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
-      padding: .5rem 1rem;
-      .navbar-brand {
-        color: $gray-darker;
-        &:hover,
-        &:focus {
-          color: $theme-primary;
-        }
+  }
+  &.navbar-shrink {
+    border-color: fade-out($gray-darker, .9);
+    box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
+    background-color: white;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    padding: .5rem 1rem;
+    .navbar-brand {
+      color: $gray-darker;
+      &:hover,
+      &:focus {
+        color: $theme-primary;
+      }
 
-        img {
-          height: 36px;
-          transition: all .3s;
-        }
+      img {
+        height: 36px;
+        transition: all .3s;
       }
-      .navbar-nav > li > a,
-      .navbar-nav > li > a:focus {
-        color: $gray-darker;
-        &:hover {
-          color: $theme-primary;
-        }
+    }
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+      color: $gray-darker;
+      &:hover {
+        color: $theme-primary;
       }
-      .btn-contact,
-      .btn-contact:focus {
+    }
+    .btn-contact,
+    .btn-contact:focus {
+      color: $gray-darker;
+      border-color: $gray-darker;
+      &:hover {
         color: $gray-darker;
-        border-color: $gray-darker;
-        &:hover {
-          color: $gray-darker;
-          border-color: $theme-primary;
-        }
+        border-color: $theme-primary;
       }
     }
   }
+}
