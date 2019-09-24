@@ -66,6 +66,7 @@
         color: darken(white, 30%);
       }
     }
+    }
     &.navbar-shrink {
       border-color: fade-out($gray-darker, .9);
       box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
@@ -103,5 +104,3 @@
       }
     }
   }
-
-}

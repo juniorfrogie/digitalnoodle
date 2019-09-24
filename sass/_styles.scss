@@ -179,6 +179,11 @@ p.content {
     width: 30px;
     border-radius: 100px;
   }
+  iframe.map {
+    width: 600;
+    height: 450;
+    max-width: 100%;
+  }
 }
 .section-gallery{
   margin-bottom: 0;
